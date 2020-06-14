@@ -58,7 +58,8 @@ body {
       position: absolute;
       height: 100%;
       left: -10%;
-      padding-left: 20rem; }
+      padding-left: 20rem;
+      transform-origin: 0 100%; }
       @media only screen and (max-width: 800px) {
         .slider .box .bg {
           width: 65%; } }
@@ -125,41 +126,41 @@ body {
           border: none; }
   .slider .box1 {
     background-color: #500033; }
-    .slider .box1 .illustration div {
+    .slider .box1 .illustration .inner {
       background-color: #FF0077; }
-      .slider .box1 .illustration div::after, .slider .box1 .illustration div::before {
+      .slider .box1 .illustration .inner::after, .slider .box1 .illustration .inner::before {
         background-color: rgba(255, 0, 119, 0.4); }
     .slider .box1 button {
       background-color: #FF0077; }
   .slider .box2 {
     background-color: #000050; }
-    .slider .box2 .illustration div {
+    .slider .box2 .illustration .inner {
       background-color: #0033FF; }
-      .slider .box2 .illustration div::after, .slider .box2 .illustration div::before {
+      .slider .box2 .illustration .inner::after, .slider .box2 .illustration .inner::before {
         background-color: rgba(0, 51, 255, 0.4); }
     .slider .box2 button {
       background-color: #0033FF; }
   .slider .box3 {
     background-color: #00501D; }
-    .slider .box3 .illustration div {
+    .slider .box3 .illustration .inner {
       background-color: #00FF44; }
-      .slider .box3 .illustration div::after, .slider .box3 .illustration div::before {
+      .slider .box3 .illustration .inner::after, .slider .box3 .illustration .inner::before {
         background-color: rgba(0, 255, 68, 0.4); }
     .slider .box3 button {
       background-color: #00FF44; }
   .slider .box4 {
     background-color: #554D00; }
-    .slider .box4 .illustration div {
+    .slider .box4 .illustration .inner {
       background-color: #FF4E00; }
-      .slider .box4 .illustration div::after, .slider .box4 .illustration div::before {
+      .slider .box4 .illustration .inner::after, .slider .box4 .illustration .inner::before {
         background-color: rgba(255, 78, 0, 0.4); }
     .slider .box4 button {
       background-color: #FF4E00; }
   .slider .box5 {
     background-color: #300050; }
-    .slider .box5 .illustration div {
+    .slider .box5 .illustration .inner {
       background-color: #8000FF; }
-      .slider .box5 .illustration div::after, .slider .box5 .illustration div::before {
+      .slider .box5 .illustration .inner::after, .slider .box5 .illustration .inner::before {
         background-color: rgba(128, 0, 255, 0.4); }
     .slider .box5 button {
       background-color: #8000FF; }

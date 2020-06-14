@@ -52,15 +52,11 @@ const move = (S, T) => {
     trail[T].classList.add("active")
 }
 
-// GSAP animation for slides
-
-// const rule = CSSRulePlugin.getRule(".inner:after")
-const tl = gsap.timeline({defaults: {duration: 0.45, ease: "power2.inOut"}})
+const tl = gsap.timeline({defaults: {duration: 0.6, ease: "power2.inOut"}})
 tl.from(".bg", {x: "-100%", opacity: 0})
-  .from("h1", {opacity: 0, y: "40px"}, "-=0.3")
-  .from("p", {opacity: 0, y: "40px"}, "-=0.3")
-  .from("button", {y: "40px", visibility: "hidden"}, "-=0.5")
-//   .to(rule, {cssRule: {color: "green"}})
+  .from("p", {opacity: 0}, "-=0.3")
+  .from("h1", {opacity: 0, y: "30px"}, "-=0.3")
+  .from("button", {opacity: 0, y: "-40px"}, "-=0.8")
 
 // function to restart animation
 const animate = () => tl.restart()
@@ -81,7 +77,7 @@ const trailUpdate = () => {
 }   
 
 // Start interval for slides
-let start = setInterval(() => slide("increase"), interval);
+let start = setInterval(() => slide("increase"), interval)
 
 // Next  and  Previous button function (SVG icon with different classes)
 document.querySelectorAll("svg").forEach(cur => {
@@ -158,4 +154,3 @@ const touchSlide = (() => {
     // call mobile on touch end
     slider.addEventListener("touchend", mobile)
 })()
-

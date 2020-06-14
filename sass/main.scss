@@ -18,7 +18,7 @@ $grey: #B5B4B4;
 // Generate different colors for slides
 @mixin color_render($DC, $LC) {
     background-color: $DC;
-    .illustration div {
+    .illustration .inner {
         background-color: $LC;
         &::after, &::before{ background-color: rgba($LC, .4);}
     }
@@ -100,7 +100,8 @@ body {
             position: absolute;
             height: 100%;
             left: -10%;
-            padding-left: 20rem;         
+            padding-left: 20rem;    
+            transform-origin: 0 100%;     
             
             @media only screen and (max-width: 800px) {
                 width: 65%;
