@@ -239,8 +239,7 @@ body {
   font-size: 1.5rem; }
   @media only screen and (max-width: 650px) {
     .trail {
-      width: 90%;
-      bottom: 1.5%; } }
+      width: 90%; } }
   .trail div {
     padding: 2rem;
     border-top: 3px solid #fff;
