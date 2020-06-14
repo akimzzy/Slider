@@ -152,6 +152,8 @@ const touchSlide = (() => {
         change > (sliderWidth/4)  ? slide("increase") : null;
         // if change * -1 is greater than a quarter of sliderWidth, prev else Do NOTHING
         (change * -1) > (sliderWidth/4) ? slide("decrease") : null;
+        // reset all variable to 0
+        [start, move, change, sliderWidth] = [0,0,0,0]
     }
     // call mobile on touch end
     slider.addEventListener("touchend", mobile)

@@ -110,7 +110,7 @@ body {
                 width: 100%;
                 left: 0;
                 bottom: 0;
-                height: 45%;
+                height: 54%;
                 transform: skewX(0deg);
             }
 
@@ -146,6 +146,7 @@ body {
                 grid-column: 1 / -1;
                 text-align: center;
                 padding:2rem;
+                transform: translateY(-6rem);
             }
             
             h1 {
@@ -279,7 +280,7 @@ body {
 
     @media only screen and (max-width: 650px) {
         width: 90%;
-        // bottom: 1.5%;
+        bottom: 7%;
     }
 
     div {

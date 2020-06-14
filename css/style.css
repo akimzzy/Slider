@@ -67,7 +67,7 @@ body {
           width: 100%;
           left: 0;
           bottom: 0;
-          height: 45%;
+          height: 54%;
           transform: skewX(0deg); } }
       .slider .box .bg::before {
         content: "";
@@ -95,7 +95,8 @@ body {
           grid-row: 2 / span 1;
           grid-column: 1 / -1;
           text-align: center;
-          padding: 2rem; } }
+          padding: 2rem;
+          transform: translateY(-6rem); } }
       .slider .box .details h1 {
         font-size: 3.5rem;
         font-weight: 500;
@@ -239,7 +240,8 @@ body {
   font-size: 1.5rem; }
   @media only screen and (max-width: 650px) {
     .trail {
-      width: 90%; } }
+      width: 90%;
+      bottom: 7%; } }
   .trail div {
     padding: 2rem;
     border-top: 3px solid #fff;
